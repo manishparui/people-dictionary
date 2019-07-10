@@ -1,0 +1,81 @@
+.chip {
+  display: inline-block;
+  padding: 0 25px;
+  height: 50px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 50px;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+  margin: 8px 10px;
+}
+
+.chip img {
+  float: left;
+  margin: 0 10px 0 -25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.cus-profile-pic{
+  background-image: url("./../images/img_avatar.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100% 100%; 
+}
+
+.full-width-div {
+    position: relative;
+    width: 100%;
+    left: 0;
+}
+
+.cus-login-container{
+  width: 300px;
+  height: 126px;
+  background-color: rgba(255,255,255,0.2);
+  position:absolute;
+  left:0; right:0;
+  top:0; bottom:0;
+  margin:auto;
+  max-width:100%;
+  max-height:100%;
+  overflow:auto;
+  padding: 15px;
+  border-radius: 10px;
+  border:2px solid white ;
+  overflow: hidden;
+}
+
+.chip:hover{
+  cursor: pointer;
+}
+.cus-footer{
+	position: absolute;
+	bottom: 0;
+}
+
+.cus-body{
+	background: url("./../images/bg-img.png") no-repeat center center fixed;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	background-size: cover;
+  	-o-background-size: cover;
+}
+
+#profileImage {
+   opacity: 0;
+   position: absolute;
+   z-index: -1;
+}
+
+.cus-click:hover{
+	cursor: pointer;
+}

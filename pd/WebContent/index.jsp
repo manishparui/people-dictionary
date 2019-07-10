@@ -6,6 +6,9 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="description" content="One stop repository for people">
+  	<meta name="keywords" content="people dictionary,pd">
+  	<meta name="author" content="Manish Parui">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" type="text/css" href="resources/bootstrap/css/bootstrap.css">

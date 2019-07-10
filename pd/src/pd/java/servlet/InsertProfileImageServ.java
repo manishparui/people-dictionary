@@ -14,6 +14,11 @@ import javax.servlet.http.Part;
 
 import pd.java.dao.ImageDao;
 
+/**
+ * @author Manish Parui
+ * https://github.com/manishparui
+ */
+
 @WebServlet("/InsertProfileImageServ")
 @MultipartConfig(maxFileSize = 16177215)    // upload file's size up to 16MB
 public class InsertProfileImageServ extends HttpServlet {

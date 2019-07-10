@@ -15,8 +15,10 @@ import pd.java.dao.ImageDao;
 import pd.java.utilities.JDBCUtil;
 
 /**
- * Servlet implementation class LoadPhotoServ
+ * @author Manish Parui
+ * https://github.com/manishparui
  */
+
 @WebServlet("/LoadPhotoServ")
 public class LoadPhotoServ extends HttpServlet {
 	private static final long serialVersionUID = 1L;

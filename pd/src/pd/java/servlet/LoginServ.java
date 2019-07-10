@@ -13,8 +13,10 @@ import javax.servlet.http.HttpServletResponse;
 import pd.java.dao.LoginDao;
 
 /**
- * Servlet implementation class LoginServ
+ * @author Manish Parui
+ * https://github.com/manishparui
  */
+
 @WebServlet("/LoginServ")
 public class LoginServ extends HttpServlet {
 	private static final long serialVersionUID = 1L;

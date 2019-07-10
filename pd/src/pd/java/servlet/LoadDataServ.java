@@ -15,8 +15,10 @@ import pd.java.dao.ProfileDao;
 import pd.java.utilities.JDBCUtil;
 
 /**
- * Servlet implementation class LoadDataServ
+ * @author Manish Parui
+ * https://github.com/manishparui
  */
+
 @WebServlet("/LoadDataServ")
 public class LoadDataServ extends HttpServlet {
 	private static final long serialVersionUID = 1L;

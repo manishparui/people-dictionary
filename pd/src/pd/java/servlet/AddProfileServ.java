@@ -12,8 +12,10 @@ import javax.servlet.http.HttpServletResponse;
 import pd.java.dao.ProfileDao;
 
 /**
- * Servlet implementation class AddProfileServ
+ * @author Manish Parui
+ * https://github.com/manishparui
  */
+
 @WebServlet("/AddProfileServ")
 public class AddProfileServ extends HttpServlet {
 	private static final long serialVersionUID = 1L;

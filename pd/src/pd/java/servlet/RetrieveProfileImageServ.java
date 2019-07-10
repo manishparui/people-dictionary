@@ -15,8 +15,10 @@ import pd.java.dao.ImageDao;
 import pd.java.utilities.CusConversion;
 
 /**
- * Servlet implementation class RetrieveImageServ
+ * @author Manish Parui
+ * https://github.com/manishparui
  */
+
 @WebServlet("/RetrieveProfileImageServ")
 public class RetrieveProfileImageServ extends HttpServlet {
 	private static final long serialVersionUID = 1L;

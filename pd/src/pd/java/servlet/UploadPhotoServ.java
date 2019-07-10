@@ -18,8 +18,10 @@ import pd.java.dao.ImageDao;
 
 
 /**
- * Servlet implementation class UploadPhoto
+ * @author Manish Parui
+ * https://github.com/manishparui
  */
+
 @WebServlet("/UploadPhotoServ")
 @MultipartConfig(maxFileSize = 16177215)
 public class UploadPhotoServ extends HttpServlet {

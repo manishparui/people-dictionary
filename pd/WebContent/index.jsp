@@ -6,6 +6,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="application-name" content="people dictionary">
 	<meta name="description" content="One stop repository for people">
   	<meta name="keywords" content="people dictionary,pd">
   	<meta name="author" content="Manish Parui">
@@ -33,7 +34,7 @@
 		</form>
 	</nav>
 
-	<div class="container" style="margin-top: 100px">
+	<main class="container" style="margin-top: 100px">
 		<div class="row">
 			
 			<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
@@ -64,7 +65,7 @@
 			%>
 
 		</div>
-	</div>
+	</main>
 	
 	<footer class="container-fluid bg-dark text-light mt-3" style="margin-bottom: 0;">
 		<div class="container p-3">

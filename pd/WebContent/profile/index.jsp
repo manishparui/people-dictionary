@@ -9,6 +9,10 @@
 <head>
 	<!-- profile -->
 	<meta charset="utf-8">
+	<meta name="application-name" content="people dictionary">
+	<meta name="description" content="One stop repository for people">
+  	<meta name="keywords" content="people dictionary,pd">
+  	<meta name="author" content="Manish Parui">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" type="text/css" href="./../resources/bootstrap/css/bootstrap.css">
@@ -184,6 +188,17 @@
 				
 			</div>
 		</div>
+		
+	</div>
+	
+	<!-- view larger pop up -->
+	<div class="modal bg-dark" id="viewLargerModalId">
+		<button onclick="closeViewLarger();">X</button>
+		
+			
+				<img class="m-5" id="largerImageId">
+			
+			
 		
 	</div>
 

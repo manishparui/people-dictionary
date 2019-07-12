@@ -1,3 +1,16 @@
+function viewLarger(imageToViewLarge){
+	document.getElementById("viewLargerModalId").style.display = "block";
+	document.getElementById("largerImageId").src = imageToViewLarge.src;
+	
+	alert(imageToViewLarge);
+}
+
+function closeViewLarger(){
+	document.getElementById("viewLargerModalId").style.display = "none";
+}
+
+
+
 var lpRequest;
 var photo;
 
@@ -25,9 +38,10 @@ function loadPhotoResponse(){
 		
 		for(var i = 0; i < count; i++){
 			var gp = document.createElement("img");
-			gp.className = "img-fluid img-thumbnail m-2";
+			gp.className = "img-fluid img-thumbnail m-2 cus-click";
 			gp.style.height = "200px";
-			gp.src = "data:image/jpg;base64," + photo.getElementsByTagName("image")[i].firstChild.data
+			gp.src = "data:image/jpg;base64," + photo.getElementsByTagName("image")[i].firstChild.data;
+			gp.onclick = function(){viewLarger(this);};
 			gallary.appendChild(gp); 
 		}
 	}  

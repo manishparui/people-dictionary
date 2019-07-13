@@ -18,6 +18,7 @@
 	<link rel="stylesheet" type="text/css" href="./../resources/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="./../resources/bootstrap/css/bootstrap-grid.css">
 	<link rel="stylesheet" type="text/css" href="./../resources/bootstrap/css/bootstrap-reboot.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.0/css/lightbox.min.css"/>
 	
 	<link rel="stylesheet" type="text/css" href="./../resources/fontawesome-free-5.7.2-web/css/all.min.css">
 
@@ -26,6 +27,7 @@
   	<script type="text/javascript" src="./../resources/ajax/LoadData.js"></script>
   	<script type="text/javascript" src="./../resources/ajax/LoadProfileImage.js"></script>
   	<script type="text/javascript" src="./../resources/ajax/LoadPhoto.js"></script>
+  	
 
 	<title>People Dictionary</title>
 </head>
@@ -190,17 +192,6 @@
 		</div>
 		
 	</div>
-	
-	<!-- view larger pop up -->
-	<div class="modal bg-dark" id="viewLargerModalId">
-		<button onclick="closeViewLarger();">X</button>
-		
-			
-				<img class="m-5" id="largerImageId">
-			
-			
-		
-	</div>
 
 	<footer class="container-fluid bg-dark text-light mt-3">
 		<div class="container p-3">
@@ -224,6 +215,8 @@
 			</div>
 		</div>
 	</footer>
+	
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.0/js/lightbox.min.js"></script>
 	
 	<%
 		if(id == null){

@@ -8,22 +8,15 @@
 	<!-- add-profile -->
 	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
-
 	<link rel="stylesheet" type="text/css" href="./../resources/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="./../resources/bootstrap/css/bootstrap-grid.css">
 	<link rel="stylesheet" type="text/css" href="./../resources/bootstrap/css/bootstrap-reboot.css">
-
 	<link rel="stylesheet" type="text/css" href="./../resources/fontawesome-free-5.7.2-web/css/all.min.css">
-
 	<link rel="stylesheet" type="text/css" href="./../resources/custom/custom.css">
-	
 	<script type="text/javascript" src="./../resources/ajax/UploadPhoto.js"></script>
-	
-
 	<title>People Dictionary</title>
 </head>
 <body class="cus-body">
-	
 	<nav class="navbar bg-dark navbar-dark fixed-top">
 		<a class="navbar-brand" href="">LOGO</a>
 		<form class="form-inline" action="">
@@ -32,15 +25,10 @@
 			<button class="btn btn-success" type="submit">Search</button>
 		</form>
 	</nav>
-
 	<div class="container" style="margin-top: 100px">
-		
 		<div class="row">
-		
 			<div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 text-center">
 				<hr><h3 class="text-light">Picture upload</h3><hr>
-				
-				
 				<form enctype='multipart/form-data'>
 					<div class="input-group mt-3">
 						<select class="form-control" id="id">
@@ -57,23 +45,32 @@
 						%>
 						</select>
 					</div>
-					
 					<div class="input-group mt-3">
 						<label for="photos" class="cus-click bg-light mx-auto p-1 rounded">
 							browse
 						</label>
-						<input class="d-none" id="photos" type="file" multiple>
+						<input class="d-none" id="photos" type="file" multiple onchange="displaySelected(this);">
 					</div>
-					
 					<div class="input-group mt-3">
 						<button class="btn-light mx-auto rounded p-1" type="button" onclick="uploadPhoto();">upload</button>
 					</div>
 				</form>
-			</div>
-			
-		</div>
-	
-	</div>
-
+			</div><!-- column-end -->
+			<div id="displaySelectedDiv" class="col-12 col-sm-12 col-md-6 col-lg-8 col-xl-9 text-center">
+				<!-- selected photos will appear here -->
+			</div><!-- column-end -->
+		</div><!-- row-end -->
+	</div><!-- container-end -->
+	<script type="text/javascript">
+		function displaySelected(selectedPhotos){
+			for(var i = 0; i < selectedPhotos.files.length; i++){
+				var photosToShow = document.createElement("img");
+				photosToShow.className = "img-fluid img-thumbnail m-2";
+				photosToShow.style.height = "200px";
+				photosToShow.src = window.URL.createObjectURL(selectedPhotos.files[i]);
+				document.getElementById("displaySelectedDiv").appendChild(photosToShow);
+			}
+		}
+	</script>
 </body>
 </html>

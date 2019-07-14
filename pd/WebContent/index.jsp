@@ -67,7 +67,7 @@
 		</div>
 	</main>
 	
-	<footer class="container-fluid bg-dark text-light mt-3" style="margin-bottom: 0;">
+	<footer class="container-fluid bg-dark text-light mt-3 fixed-bottom">
 		<div class="container p-3">
 			<div class="row">
 				<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center">
@@ -76,7 +76,7 @@
 					<a class="text-light" href="">Help</a>&nbsp&nbsp&nbsp&nbsp
 				</div>
 				<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center">
-					<a class="text-light" href="">Notation</a>&nbsp&nbsp&nbsp&nbsp
+					<a class="text-light" href="./tools">Tools</a>&nbsp&nbsp&nbsp&nbsp
 					<a class="text-light" href="">API</a>&nbsp&nbsp&nbsp&nbsp
 					<a class="text-light" href="">Contact</a>&nbsp&nbsp&nbsp&nbsp
 					<a class="text-light" href="">About</a>
